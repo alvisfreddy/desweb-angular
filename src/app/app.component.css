@@ -60,18 +60,7 @@ p {
 	align-items: center;
 }
 
-svg.material-icons {
-	height: 24px;
-	width: auto;
-}
 
-svg.material-icons:not(:last-child) {
-	margin-right: 8px;
-}
-
-.card svg.material-icons path {
-	fill: #888;
-}
 
 .card-container {
 	display: flex;
@@ -114,9 +103,6 @@ svg.material-icons:not(:last-child) {
 	box-shadow: 0 4px 17px rgba(black, 0.35);
 }
 
-.card-container .card:not(.highlight-card):hover .material-icons path {
-	fill: rgb(105, 103, 103);
-}
 
 .card.highlight-card {
 	background-color: #1976d2;
@@ -242,12 +228,6 @@ footer a {
 	background-image: linear-gradient(-180deg, #f0f3f6, #e6ebf1 90%);
 	border-color: rgba(27, 31, 35, 0.35);
 	background-position: -0.5em;
-}
-
-.github-star-badge .material-icons {
-	height: 16px;
-	width: 16px;
-	margin-right: 4px;
 }
 
 svg#clouds {
