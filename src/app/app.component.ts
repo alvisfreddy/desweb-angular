@@ -6,13 +6,15 @@ import { Component } from '@angular/core';
 	styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
 	title = 'Hola Mundo en Angular !!!';
 
-	titulo = 'Manual de Angular de DesarrolloWeb.com';
+	titulo = 'Manual de Angular';
 
 	visible = false;
 
 	decirAdios() {
 		this.visible = true;
 	}
+
 }
