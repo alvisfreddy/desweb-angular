@@ -37,18 +37,23 @@
 
 	<!-- Principal -->
 	<h2>{{ titulo }}</h2>
-
 	<div>
 		<p>
 			<button (click)="decirAdios()">Decir adiós</button>
 		</p>
-		<p [hidden]="!visible">Adiós</p>
+		<p [hidden]="!visible">
+			Adiós
+		</p>
+	</div>
+	<div>
+		<p>
+			<br />
+			Cómo te llamas ? <input type="text" [(ngModel)]="quien">
+		</p>
+		<p>Hola <b>{{quien}}</b></p>
 	</div>
 
-	<p><br>
-		Cómo te llamas ? <input type="text" [(ngModel)]="quien">
-	</p>
-	<blockquote>Hola <b>{{quien}}</b></blockquote>
+	<app-mi-componente></app-mi-componente>
 
 	<!-- Footer -->
 	<footer>
