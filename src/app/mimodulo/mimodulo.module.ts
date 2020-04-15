@@ -10,6 +10,9 @@ import { MiComponenteComponent } from './mi-componente/mi-componente.component';
 	],
 	imports: [
 		CommonModule
+	],
+	exports: [
+		MiComponenteComponent
 	]
 })
 export class MimoduloModule { }
