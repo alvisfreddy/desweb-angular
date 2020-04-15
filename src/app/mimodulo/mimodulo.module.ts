@@ -5,7 +5,9 @@ import { MiComponenteComponent } from './mi-componente/mi-componente.component';
 
 
 @NgModule({
-	declarations: [MiComponenteComponent],
+	declarations: [
+		MiComponenteComponent
+	],
 	imports: [
 		CommonModule
 	]
