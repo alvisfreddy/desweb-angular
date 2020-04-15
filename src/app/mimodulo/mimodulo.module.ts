@@ -11,6 +11,7 @@ import { MicomponenteComponent } from './micomponente/micomponente.component';
 		CommonModule
 	],
 	exports: [
+		MicomponenteComponent
 	]
 })
 export class MimoduloModule { }
