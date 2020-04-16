@@ -7,16 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-	title = 'Hola Mundo en Angular !!!';
+	tituloPrincipal = 'Manual de Angular';
 
-	titulo = 'Manual de Angular';
+	tituloInicio = 'Hola Mundo en Angular !!!';
 
-	visible = false;
+	adiosVisible = false;
 
 	quien = 'Alvis';
 
 	decirAdios() {
-		this.visible = true;
+		this.adiosVisible = true;
 	}
 
 }
