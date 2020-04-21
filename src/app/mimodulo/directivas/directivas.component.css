@@ -1,4 +1,4 @@
-div {
+div[class^='d-'] {
 	padding: 4px 50px;
 	border: 1px solid #a9b1b8;
 	border-radius: 4px;
@@ -7,7 +7,7 @@ div {
 	background-size: 8px 8px;
 }
 
-div + div {
+div[class^='d-'] + div[class^='d-'] {
 	margin-top: 5px;
 }
 
@@ -73,3 +73,20 @@ div.d-ngfor span.no {
 	border: 1px solid #db524d;
 	background-color: #ffb1aeb7;
 }
+
+/* ngModel */
+div.d-ngmodel > div {
+	background-color: #00000011;
+	display: inline-block;
+	vertical-align: top;
+	width: auto;
+	padding: 10px 20px;
+	margin: 0px 10px 0px 0px;
+}
+
+div.d-ngmodel div p {
+	background-color: #00aeff22;
+	padding: 5px 10px;
+	margin: 4px 0px;
+}
+

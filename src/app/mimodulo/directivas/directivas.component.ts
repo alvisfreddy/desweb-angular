@@ -51,6 +51,10 @@ export class DirectivasComponent implements OnInit {
 		}
 	];
 
+	// ngModel
+	texto = "Mi texto";
+	texto2 = "Mi texto con doble binding";
+
 	constructor() { }
 
 	ngOnInit(): void {

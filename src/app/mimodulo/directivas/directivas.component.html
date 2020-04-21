@@ -34,3 +34,25 @@
 		<span class="no">No {{ obj.no }}</span>
 	</p>
 </div>
+
+<h3>ngModel</h3>
+<div class="d-ngmodel">
+	<p>Simple Binding ( Dirección  del Modelo -> Vista ).</p>
+	<div>
+		<label>Ingrese un texto: <input type="text" [ngModel]="texto"></label>
+	</div>
+	<div>
+		Texto ingresado al Modelo:<br>
+		<p>{{ texto }}</p>
+	</div>
+</div>
+<div class="d-ngmodel">
+	<p>Doble Binding ( Dirección Modelo <-> Vista )</p>
+	<div>
+		<label>Ingrese un texto: <input type="text" [(ngModel)]="texto2"></label>
+	</div>
+	<div>
+		Texto ingresado al Modelo:<br>
+		<p>{{ texto2 }}</p>
+	</div>
+</div>
