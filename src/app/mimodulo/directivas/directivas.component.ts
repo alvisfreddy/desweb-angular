@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DirectivasComponent implements OnInit {
 
+	// ngClass
+	isMayus;
+	isUline;
+	isBorde;
+	isFondo;
+
 	constructor() { }
 
 	ngOnInit(): void {
