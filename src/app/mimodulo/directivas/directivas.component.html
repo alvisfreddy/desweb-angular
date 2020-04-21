@@ -1,1 +1,13 @@
-<p>Componente <b>Directivas</b> [ ò_ó ]</p>
+<h3>ngClass</h3>
+<div class="d-ngclass">
+	<p [ngClass]="['mayus','uline']">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, id!</p>
+</div>
+<div class="d-ngclass">
+	<label><input type="checkbox" [(ngModel)]="isMayus"> Mayúsculas</label>
+	<label><input type="checkbox" [(ngModel)]="isUline"> Subrayado</label>
+	<label><input type="checkbox" [(ngModel)]="isBorde"> Borde</label>
+	<label><input type="checkbox" [(ngModel)]="isFondo"> Fondo</label>
+	<p [ngClass]="{mayus:isMayus, uline:isUline, borde:isBorde, fondo:isFondo}">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, id!
+	</p>
+</div>

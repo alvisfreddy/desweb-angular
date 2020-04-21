@@ -1,0 +1,54 @@
+div {
+	padding: 4px 50px;
+	border: 1px solid #a9b1b8;
+	border-radius: 4px;
+	background-image: repeating-linear-gradient(-45deg, rgba(0,0,0, 0.15)
+		, rgba(0,0,0, 0.15) 1px, transparent 1px, transparent 6px);
+	background-size: 8px 8px;
+}
+
+div + div {
+	margin-top: 5px;
+}
+
+/* ngClass */
+.mayus {
+	text-transform: uppercase;
+}
+
+.minus {
+	text-transform: lowercase;
+}
+
+.cap {
+	text-transform: capitalize;
+}
+
+.uline {
+	text-decoration: underline;
+}
+
+.oline {
+	text-decoration: overline;
+}
+
+.tline {
+	text-decoration: line-through;
+}
+
+.borde {
+	border: 1px solid #65a2e0;
+}
+
+.fondo {
+	background-color: #4ffa001a;
+}
+
+div.d-ngclass label + p {
+	padding: 5px;
+	margin-top: 0;
+}
+
+label + label {
+	margin-left: 15px;
+}
