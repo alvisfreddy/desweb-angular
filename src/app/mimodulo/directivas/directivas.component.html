@@ -11,3 +11,26 @@
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, id!
 	</p>
 </div>
+
+<h3>ngFor</h3>
+<div class="d-ngfor">
+	<ul>
+		<li *ngFor="let pregunta of preguntas">{{ pregunta }}</li>
+	</ul>
+</div>
+<div class="d-ngfor">
+	<p *ngFor="let objPregunta of preguntasObj">
+		{{ objPregunta.pregunta }}:
+		<br>
+		<span class="si">Si {{ objPregunta.si }}</span> /
+		<span class="no">No {{ objPregunta.no }}</span>
+	</p>
+</div>
+<div class="d-ngfor">
+	<p *ngFor="let obj of preguntasObj2">
+		{{ obj.pregunta }}:
+		<br>
+		<span class="si">Si {{ obj.si }}</span> /
+		<span class="no">No {{ obj.no }}</span>
+	</p>
+</div>

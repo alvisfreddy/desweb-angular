@@ -52,3 +52,24 @@ div.d-ngclass label + p {
 label + label {
 	margin-left: 15px;
 }
+
+/* ngFor */
+div.d-ngfor p {
+	line-height: 1.25em;
+}
+div.d-ngfor p span {
+	border-radius: 4px;
+	padding: 0px 6px;
+	text-shadow: 0px -1px 1px #fff, 1px 0px 1px #fff, 0px 1px 1px #fff, -1px 0px 1px #fff;
+}
+
+div.d-ngfor span.si {
+	margin-left: 28px;
+	border: 1px solid #47e047;
+	background-color: #aeffaeb7;
+}
+div.d-ngfor span.no {
+	/* margin-left: 0px; */
+	border: 1px solid #db524d;
+	background-color: #ffb1aeb7;
+}
