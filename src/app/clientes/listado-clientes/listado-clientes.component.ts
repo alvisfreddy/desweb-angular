@@ -10,7 +10,7 @@ import { ClientesService } from "./../clientes.service";
 })
 export class ListadoClientesComponent implements OnInit {
 
-	constructor() { }
+	constructor(private clientesService: ClientesService) { }
 
 	ngOnInit(): void {
 	}
