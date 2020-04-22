@@ -7,6 +7,8 @@ import { MiComponenteComponent } from './mi-componente/mi-componente.component';
 
 import { MimoduloModule } from './mimodulo/mimodulo.module';
 
+import { ClientesModule } from "./clientes/clientes.module";
+
 @NgModule({
 	declarations: [
 		AppComponent,
@@ -15,7 +17,8 @@ import { MimoduloModule } from './mimodulo/mimodulo.module';
 	imports: [
 		BrowserModule,
 		FormsModule,
-		MimoduloModule
+		MimoduloModule,
+		ClientesModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]
