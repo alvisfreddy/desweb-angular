@@ -12,6 +12,9 @@ import { AltaClienteComponent } from './alta-cliente/alta-cliente.component';
 		CommonModule,
 		FormsModule
 	],
+	exports: [
+		AltaClienteComponent
+	],
 	providers: [
 		ClientesService
 	]
