@@ -10,9 +10,19 @@ import { Cliente, Grupo } from "./../cliente.model";
 })
 export class AltaClienteComponent implements OnInit {
 
+	cliente: Cliente;
+	grupos: Grupo[];
+
 	constructor(private clientesService: ClientesService) { }
 
 	ngOnInit(): void {
+		this.cliente = this.clientesService.nuevoCliente();
+		this.grupos = this.clientesService.getGrupos();
+	}
+
+	nuevoCliente(): void {
+		this.clientesService.agregarCliente(this.cliente);
+		this.cliente = this.clientesService.nuevoCliente();
 	}
 
 }
