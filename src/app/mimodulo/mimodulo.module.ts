@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MicomponenteComponent } from './micomponente/micomponente.component';
 import { DirectivasComponent } from './directivas/directivas.component';
 import { FormsModule } from '@angular/forms';		// Agregar para utilizar ngModel
+import { MiservicioService } from './miservicio.service';
 import { UsaservicioComponent } from './usaservicio/usaservicio.component';
 
 
@@ -19,6 +20,9 @@ import { UsaservicioComponent } from './usaservicio/usaservicio.component';
 	exports: [
 		MicomponenteComponent,
 		DirectivasComponent
+	],
+	providers: [
+		MiservicioService
 	]
 })
 export class MimoduloModule { }
