@@ -18,4 +18,27 @@ export class ClientesService {
 		];
 		this.clientes = [];
 	}
+
+	getGrupos(): Grupo[] {
+		return this.grupos;
+	}
+
+	getClientes(): Cliente[] {
+		return this.clientes;
+	}
+
+	agregarCliente(cliente: Cliente) {
+		this.clientes.push(cliente);
+	}
+
+	nuevoCliente(): Cliente {
+		return {
+			id: this.clientes.length,
+			nombre: '',
+			cif: '',
+			direccion: '',
+			grupo: 0
+		}
+	}
+
 }
