@@ -19,7 +19,8 @@ import { UsaservicioComponent } from './usaservicio/usaservicio.component';
 	],
 	exports: [
 		MicomponenteComponent,
-		DirectivasComponent
+		DirectivasComponent,
+		UsaservicioComponent
 	],
 	providers: [
 		MiservicioService
