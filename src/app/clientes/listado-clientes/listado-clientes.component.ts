@@ -10,9 +10,12 @@ import { ClientesService } from "./../clientes.service";
 })
 export class ListadoClientesComponent implements OnInit {
 
+	clientes: Cliente[];
+
 	constructor(private clientesService: ClientesService) { }
 
 	ngOnInit(): void {
+		this.clientes = this.clientesService.getClientes();
 	}
 
 }
