@@ -56,3 +56,15 @@
 		<p>{{ texto2 }}</p>
 	</div>
 </div>
+
+<h3>ngModelChange</h3>
+<div class="d-ngmodel">
+	<p>Prueba con borrar todo el texto.</p>
+	<div>
+		<label>Ingrese un texto: <input type="text" [ngModel]="texto3" (ngModelChange)="modificaValor($event)"></label>
+	</div>
+	<div>
+		Texto ingresado al Modelo:<br>
+		<p>{{ texto3 }}</p>
+	</div>
+</div>

@@ -55,6 +55,12 @@ export class DirectivasComponent implements OnInit {
 	texto = "Mi texto";
 	texto2 = "Mi texto con doble binding";
 
+	// ngModelChange
+	texto3 = "Texto :)";
+	modificaValor(dato) {
+		this.texto3 = dato==="" ? "Alvis" : dato;
+	}
+
 	constructor() { }
 
 	ngOnInit(): void {
