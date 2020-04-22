@@ -17,7 +17,8 @@ import { ListadoClientesComponent } from './listado-clientes/listado-clientes.co
 		FormsModule
 	],
 	exports: [
-		AltaClienteComponent
+		AltaClienteComponent,
+		ListadoClientesComponent
 	],
 	providers: [
 		ClientesService
