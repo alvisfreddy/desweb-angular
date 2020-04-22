@@ -1,0 +1,23 @@
+div.d-servicio {
+	padding: 4px 50px;
+	border: 1px solid #a9b1b8;
+	border-radius: 4px;
+	background-image: repeating-linear-gradient(-45deg, rgba(0,0,0, 0.15)
+		, rgba(0,0,0, 0.15) 1px, transparent 1px, transparent 6px);
+	background-size: 8px 8px;
+}
+
+div.d-servicio > div {
+	background-color: #00000011;
+	display: inline-block;
+	vertical-align: top;
+	width: auto;
+	padding: 10px 20px;
+	margin: 0px 10px 0px 0px;
+}
+
+div.d-servicio div p {
+	background-color: #00aeff22;
+	padding: 5px 10px;
+	margin: 4px 0px;
+}
