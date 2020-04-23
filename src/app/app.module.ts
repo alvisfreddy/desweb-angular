@@ -7,7 +7,7 @@ import { MiComponenteComponent } from './mi-componente/mi-componente.component';
 
 import { MimoduloModule } from './mimodulo/mimodulo.module';
 
-import { ClientesModule } from "./clientes/clientes.module";
+import { ClientesModule } from './clientes/clientes.module';
 
 @NgModule({
 	declarations: [
