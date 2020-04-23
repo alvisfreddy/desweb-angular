@@ -12,6 +12,8 @@ export class ClientesService {
 	private clientes: Cliente[];
 	private grupos: Grupo[];
 
+	private clientes$ = new Subject<Cliente[]>();
+
 	constructor() {
 		this.grupos = [
 			{ id: 0, nombre: 'Sin definir' },
