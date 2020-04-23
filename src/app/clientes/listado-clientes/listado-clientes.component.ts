@@ -19,7 +19,8 @@ export class ListadoClientesComponent implements OnInit {
 	constructor(private clientesService: ClientesService) { }
 
 	ngOnInit(): void {
-		this.clientes = this.clientesService.getClientes();
+		this.clientes$ = this.clientesService.getClientes$();
+		this.clientes$.subscribe(clientes => this.clientes = clientes);
 	}
 
 	generarClientes(): void {
