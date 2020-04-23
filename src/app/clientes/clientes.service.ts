@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Cliente, Grupo } from './cliente.model';
 
-import { Observable } from 'rxjs/Observable';
-import { Subject } from 'rxjs/Subject';
 import { Observable } from 'rxjs';
+import { Subject } from 'rxjs';
 
 @Injectable({
 	providedIn: 'root'
@@ -67,6 +66,7 @@ export class ClientesService {
 			direccion: 'Calle A S/N',
 			grupo: 1
 		});
+		this.clientes$.next(this.clientes);
 	}
 
 }
