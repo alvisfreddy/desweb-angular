@@ -18,4 +18,8 @@ export class ListadoClientesComponent implements OnInit {
 		this.clientes = this.clientesService.getClientes();
 	}
 
+	generarClientes(): void {
+		this.clientesService.generarClientesDemo();
+	}
+
 }

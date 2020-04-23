@@ -1,7 +1,7 @@
 <fieldset>
 	<legend>Listado de Clientes</legend>
 	<div *ngIf="! clientes.length">
-		No hay clientes por el momento.
+		No hay clientes por el momento. <a href="javascript:;" (click)="generarClientes()">( Generar )</a>
 	</div>
 	<div *ngIf="clientes.length">
 		<article class="cab-lista">

@@ -41,4 +41,21 @@ export class ClientesService {
 		}
 	}
 
+	generarClientesDemo(): void {
+		this.clientes.push({
+			id: this.clientes.length,
+			nombre: 'Alvis Tuna',
+			ci: '112233',
+			direccion: 'Calle A S/N',
+			grupo: 1
+		});
+		this.clientes.push({
+			id: this.clientes.length,
+			nombre: 'Freddy Mamani',
+			ci: '14253',
+			direccion: 'Calle A S/N',
+			grupo: 1
+		});
+	}
+
 }
