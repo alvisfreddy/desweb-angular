@@ -6,13 +6,13 @@
 	<div *ngIf="clientes.length">
 		<article class="cab-lista">
 			<span>Nombre</span>
-			<span>CIF</span>
+			<span>C.I.</span>
 			<span>Dirección</span>
 			<span>Grupo</span>
 		</article>
 		<article *ngFor="let cliente of clientes">
 			<span>{{cliente.nombre}}</span>
-			<span>{{cliente.cif}}</span>
+			<span>{{cliente.ci}}</span>
 			<span>{{cliente.direccion}}</span>
 			<span>{{cliente.grupo}}</span>
 		</article>

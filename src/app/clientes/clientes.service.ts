@@ -11,10 +11,10 @@ export class ClientesService {
 
 	constructor() {
 		this.grupos = [
-			{id: 0, nombre: 'Sin definir'},
-			{id: 1, nombre: 'Activos' },
-			{id: 2, nombre: 'Inactivos' },
-			{id: 3, nombre: 'Deudores' }
+			{ id: 0, nombre: 'Sin definir' },
+			{ id: 1, nombre: 'Activos' },
+			{ id: 2, nombre: 'Inactivos' },
+			{ id: 3, nombre: 'Deudores' }
 		];
 		this.clientes = [];
 	}
@@ -35,7 +35,7 @@ export class ClientesService {
 		return {
 			id: this.clientes.length,
 			nombre: '',
-			cif: '',
+			ci: '',
 			direccion: '',
 			grupo: 0
 		}
