@@ -3,6 +3,7 @@ import { Cliente, Grupo } from './cliente.model';
 
 import { Observable } from 'rxjs/Observable';
 import { Subject } from 'rxjs/Subject';
+import { Observable } from 'rxjs';
 
 @Injectable({
 	providedIn: 'root'
@@ -32,8 +33,13 @@ export class ClientesService {
 		return this.clientes;
 	}
 
+	getClientes$(): Observable<Cliente[]> {
+		return this.clientes$.asObservable();
+	}
+
 	agregarCliente(cliente: Cliente) {
 		this.clientes.push(cliente);
+		this.clientes$.next(this.clientes);
 	}
 
 	nuevoCliente(): Cliente {
