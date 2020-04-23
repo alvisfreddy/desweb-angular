@@ -1,10 +1,20 @@
-<h2>Listado clientes</h2>
-<div *ngIf="! clientes.length">No hay clientes por el momento</div>
-<div>
-	<article *ngFor="let cliente of clientes">
-		<span>{{cliente.nombre}}</span>
-		<span>{{cliente.cif}}</span>
-		<span>{{cliente.direccion}}</span>
-		<span>{{cliente.grupo}}</span>
-	</article>
-</div>
+<fieldset>
+	<legend>Listado de Clientes</legend>
+	<div *ngIf="! clientes.length">
+		No hay clientes por el momento.
+	</div>
+	<div *ngIf="clientes.length">
+		<article class="cab-lista">
+			<span>Nombre</span>
+			<span>CIF</span>
+			<span>Dirección</span>
+			<span>Grupo</span>
+		</article>
+		<article *ngFor="let cliente of clientes">
+			<span>{{cliente.nombre}}</span>
+			<span>{{cliente.cif}}</span>
+			<span>{{cliente.direccion}}</span>
+			<span>{{cliente.grupo}}</span>
+		</article>
+	</div>
+</fieldset>

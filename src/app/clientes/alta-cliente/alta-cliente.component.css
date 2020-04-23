@@ -1,0 +1,39 @@
+fieldset {
+	display: inline-block;
+	width: auto;
+	padding: 4px 5px;
+	border: 1px solid #a9b1b8;
+	border-radius: 4px;
+	background-image: repeating-linear-gradient(-45deg, rgba(0,0,0, 0.15)
+		, rgba(0,0,0, 0.15) 1px, transparent 1px, transparent 6px);
+	background-size: 8px 8px;
+	vertical-align: top;
+}
+legend {
+	font-size: 18pt;
+	border: 1px solid #999;
+	border-radius: 4px;
+	margin: 2px auto;
+	padding: 0px 15px;
+}
+label {
+	display: block;
+}
+label span {
+	display: inline-block;
+	width: 70px;
+}
+input {
+	width: 162px;
+	margin: 2px 0px;
+}
+select {
+	width: 180px;
+	margin: 2px 0px;
+}
+button {
+	width: 110px;
+	position: relative;
+	/* top: 10px; */
+	left: 140px;;
+}
