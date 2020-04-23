@@ -14,6 +14,8 @@ export class ListadoClientesComponent implements OnInit {
 
 	clientes: Cliente[];
 
+	clientes$: Observable<Cliente[]>;
+
 	constructor(private clientesService: ClientesService) { }
 
 	ngOnInit(): void {
