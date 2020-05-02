@@ -51,6 +51,15 @@ export class ClientesService {
 		}
 	}
 
+	borrarCliente(cliente: Cliente): void {
+		for (let i = 0; i < this.clientes.length; i++) {
+			if( cliente === this.clientes[i]) {
+				this.clientes.splice(i, 1);
+				break;
+			}
+		}
+	}
+
 	generarClientesDemo(): void {
 		this.clientes.push({
 			id: this.clientes.length,

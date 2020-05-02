@@ -11,9 +11,9 @@ import { Subscription } from 'rxjs';
 	templateUrl: './listado-clientes.component.html',
 	styleUrls: ['./listado-clientes.component.css']
 })
-export class ListadoClientesComponent implements OnInit {
+export class ListadoClientesComponent implements OnInit, OnDestroy {
 
-	clientes: Cliente[];
+	clientes: Cliente[] = [];
 
 	clientes$: Observable<Cliente[]>;
 
@@ -26,12 +26,16 @@ export class ListadoClientesComponent implements OnInit {
 		this.clientesSubscription = this.clientes$.subscribe(clientes => this.clientes = clientes);
 	}
 
-	ngOnDestroy() {
+	ngOnDestroy(): void {
 		this.clientesSubscription.unsubscribe();
 	}
 
 	generarClientes(): void {
 		this.clientesService.generarClientesDemo();
+	}
+
+	doBorrarCliente(cliente: Cliente) {
+		this.clientesService.borrarCliente(cliente);
 	}
 
 }

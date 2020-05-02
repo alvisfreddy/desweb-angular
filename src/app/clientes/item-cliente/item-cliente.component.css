@@ -1,19 +1,38 @@
 article {
 	display: flex;
 	border-bottom: 1px solid #bbb;
-	padding: 2px;
+	padding: 2px 0px;
 	font-size: 0.9em;
 }
 article span {
 	display: inline-block;
-	width: 100px;
+	width: 140px;
 	border: 1px solid #3b3b3b11;
-	padding-left: 0px 2px;
+	padding-left: 2px;
 	background-color: #3b3b3b11;
+	overflow: auto;
 }
 article span + span {
-	margin-left: 4px;
+	margin-left: 3px;
 }
-article span:nth-child(2), article span:nth-child(4) {
+article span:nth-child(2) {
+	width: 70px;
 	text-align: center;
+}
+article span:nth-child(4) {
+	width: 50px;
+	text-align: center;
+}
+button {
+	padding: 0 5px;
+	margin: 1px 2px 2px 2px;
+	border: 1px solid #666;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px #666;
+	background-color: #ee747466;
+	height: 20px;
+}
+button:hover {
+	box-shadow: 2px 2px 1px #666;
+	cursor: pointer;
 }

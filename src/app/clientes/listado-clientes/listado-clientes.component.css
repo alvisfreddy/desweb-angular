@@ -20,18 +20,26 @@ legend {
 article {
 	display: flex;
 	border-bottom: 1px solid #999;
-	padding: 2px;
+	padding: 2px 0px;
 	font-size: 0.9em;
 }
 article span {
 	display: inline-block;
-	width: 100px;
+	width: 140px;
 	border: 1px solid #999;
-	padding-left: 0px 2px;
+	padding-left: 1px;
+	padding-right: 1px;
 	background-color: #00aeff11;
 	font-weight: bold;
 	text-align: center;
+	overflow: auto;
+}
+article span:nth-child(2) {
+	width: 70px;
+}
+article span:nth-child(4) {
+	width: 50px;
 }
 article span + span {
-	margin-left: 4px;
+	margin-left: 3px;
 }

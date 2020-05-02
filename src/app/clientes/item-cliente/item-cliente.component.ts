@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 
 import { Cliente } from './../cliente.model';
 
@@ -12,9 +12,16 @@ export class ItemClienteComponent implements OnInit {
 	@Input()
 	cliente: Cliente;
 
+	@Output()
+	borrarCliente = new EventEmitter<Cliente>();
+
 	constructor() { }
 
 	ngOnInit(): void {
+	}
+
+	onBorrarCliente() {
+		this.borrarCliente.emit(this.cliente);
 	}
 
 }
