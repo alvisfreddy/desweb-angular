@@ -4,17 +4,12 @@
 		No hay clientes por el momento. <a href="javascript:;" (click)="generarClientes()">( Generar )</a>
 	</div>
 	<div *ngIf="clientes.length">
-		<article class="cab-lista">
+		<article>
 			<span>Nombre</span>
 			<span>C.I.</span>
 			<span>Dirección</span>
 			<span>Grupo</span>
 		</article>
-		<article *ngFor="let cliente of clientes">
-			<span>{{cliente.nombre}}</span>
-			<span>{{cliente.ci}}</span>
-			<span>{{cliente.direccion}}</span>
-			<span>{{cliente.grupo}}</span>
-		</article>
+		<app-item-cliente *ngFor="let cliente of clientes" [cliente]="cliente"></app-item-cliente>
 	</div>
 </fieldset>
